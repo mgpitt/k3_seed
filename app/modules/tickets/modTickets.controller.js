@@ -1,5 +1,5 @@
 
-function ticketCtrl($scope, ticketSvc) {
+function ticketCtrl($scope, ticketSvc, $uibModal) {
     $scope.ticketGrid = {
         data: $scope.$ctrl.tickets || [],
         columnDefs: [
@@ -33,9 +33,15 @@ function ticketCtrl($scope, ticketSvc) {
             },
         ],
     };
+
+    // function openArticle () {
+    //     const articleModal = $uibModal.open({
+    //         '': '',
+    //     });
+    // }
     console.log($scope);
 }
 
-ticketCtrl.$inject = ['$scope', 'ticketSvc'];
+ticketCtrl.$inject = ['$scope', 'ticketSvc', '$uibModal'];
 
 export default ticketCtrl;
