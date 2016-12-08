@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html ng-app="k3" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Konica Minolta Application Framework</title>
+  <meta name="description" content="K Cubed">
+  <meta name="author" content="KMBS">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="logo-bar">
+    <img src="img/km_logo.png" alt="">
+  </div>
+  <div ui-view="nav"></div>
+  <div ui-view="main"></div>
+  <script src="bundle.js"></script>
+</body>
+</html>
